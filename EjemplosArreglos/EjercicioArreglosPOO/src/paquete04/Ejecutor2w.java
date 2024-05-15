@@ -5,6 +5,7 @@
 package paquete04;
 
 import paquete01.LibretaCalificacion;
+
 /**
  *
  * @author utpl
@@ -12,8 +13,11 @@ import paquete01.LibretaCalificacion;
 public class Ejecutor2w {
 
     public static void main(String[] args) {
-        double[] notas = {8,9,10,6};
+        double[] notas = {8, 9, 10, 6};
         String nombre = "Erick Rodas";
         LibretaCalificacion l2 = new LibretaCalificacion(nombre, notas);
+        l2.establecerPromedio();
+        l2.establecerPromedioCualitativo();
+        System.out.printf("%s\n",l2);
     }
 }
