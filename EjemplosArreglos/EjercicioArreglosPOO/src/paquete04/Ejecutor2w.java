@@ -15,9 +15,17 @@ public class Ejecutor2w {
     public static void main(String[] args) {
         double[] notas = {8, 9, 10, 6};
         String nombre = "Erick Rodas";
+        
         LibretaCalificacion l2 = new LibretaCalificacion(nombre, notas);
         l2.establecerPromedio();
         l2.establecerPromedioCualitativo();
-        System.out.printf("%s\n",l2);
+        /* 
+        Si comentamos la linea 21, va a imprimir el promedio cuantitativo como 
+        null.
+        Ya que en ningun momento llamamos a la funcion por lo q no se le asigna 
+        absolutalmente nada
+        */
+        
+        System.out.printf("%s\n", l2);
     }
 }
