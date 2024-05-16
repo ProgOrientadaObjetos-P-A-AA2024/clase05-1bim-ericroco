@@ -18,12 +18,12 @@ public class Ejecutor {
         Profesor profesor2 = new Profesor("Gregory Walsh", "nombramiento");
         Profesor profesor3 = new Profesor("Kevin Page", "nombramiento");
         
-        c1.establecerProfesor(profesor3);
-        c2.establecerProfesor(profesor1);
-        c3.establecerProfesor(profesor2);
+        c1.establecerProfesor(profesor1);
+        c2.establecerProfesor(profesor2);
+        c3.establecerProfesor(profesor3);
         
-        Calificacion [] lista = {c1, c2, c2};
-        
+        Calificacion [] lista = {c1, c2, c3};
+        // siempre guardar los cambios antes de hacer el push y revisar el codigo
         
         LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers",
                 lista);
