@@ -21,6 +21,8 @@ public class Ejecutor {
         c1.establecerProfesor(profesor1);
         c2.establecerProfesor(profesor2);
         c3.establecerProfesor(profesor3);
+        // Sobreescribimos el valor de establecer profesor ya que en el metodo
+        // calificacion se esta cambiando este valor
         Calificacion [] lista = {c1, c2, c3}; 
         
         LibretaCalificacion libreta1 = new LibretaCalificacion("Justin Powers",
